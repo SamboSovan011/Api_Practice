@@ -12,6 +12,9 @@ class UserCollection extends ResourceCollection
    * @param  \Illuminate\Http\Request  $request
    * @return array
    */
+
+  public $collects = 'App\Http\Resources\User';
+
   public function toArray($request)
   {
     return [
